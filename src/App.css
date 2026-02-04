@@ -1,11 +1,27 @@
+
+
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
 }
 
+
+
+.center-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 1em;
+}
+
+
 .h1 {
+    font-family: "Algerian";
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -14,20 +30,27 @@
 
 .list {
     display: flex;
-    justify-content: center;
     font-size: 64px;
     gap: 0.25rem;
+    
+    border-radius: 8px;
+    padding: 0.5rem;
+    
+    width: max-content;
+    height: 85px;
 }
+
 
 .list a svg {
     color: white;
-    transition: transform 0.2s ease, color 0.2s ease;
+    transition:transform 0.2s ease, color 0.2s ease;
     cursor: pointer;
+    padding: 0.2rem;
 }
 
 .list a:hover svg{
-    color: purple;
-    transform: scale(1.15);
+    color: darkblue;
+    transform: scale(1.2);
 }
 
 .card {
