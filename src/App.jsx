@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { ImGithub } from "react-icons/im";
-import {FaLinkedin} from "react-icons/fa";
+import {FaLinkedin, FaFileDownload} from "react-icons/fa";
 
 
 
@@ -23,8 +23,9 @@ function App() {
               <a href="https://www.linkedin.com/in/braxton-placke-290917306" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
                   <FaLinkedin />
                   </a>
-                  <a href="https://www.linkedin.com/in/braxton-placke-290917306">
-                
+                  <a href="/2025 Resume.pdf" download>
+                      <FaFileDownload />
+                       <span className="label">Resume</span>
                   </a>
               </div>
           </div>

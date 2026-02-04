@@ -6,6 +6,7 @@
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    background-color: black;
 }
 
 
@@ -40,6 +41,21 @@
     height: 85px;
 }
 
+.list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    text-decoration: none;
+    
+}
+
+.list a .label {
+    font-size: 0.9rem;
+    color: white;
+    transition:transform 0.2s ease, color 0.2s ease;
+}
+
 
 .list a svg {
     color: white;
@@ -52,7 +68,10 @@
     color: darkblue;
     transform: scale(1.2);
 }
-
+.list a:hover .label{
+    color: darkblue;
+    transform: scale(1.2);
+}
 .card {
   padding: 2em;
 }
