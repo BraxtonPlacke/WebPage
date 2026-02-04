@@ -1,5 +1,11 @@
 
-
+@font-face {
+    font-family: "Algerian";
+    src: url("/Algerian Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 #root {
     max-width: 1280px;
@@ -7,6 +13,7 @@
     padding: 2rem;
     text-align: center;
     background-color: black;
+    color: white;
 }
 
 
@@ -23,6 +30,7 @@
 
 .h1 {
     font-family: "Algerian";
+    
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
