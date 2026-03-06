@@ -12,8 +12,10 @@
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
-    background-color: black;
     
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -59,6 +61,11 @@ a {
 
 body {
     background-color: black;
+    
+}
+
+main {
+    flex: 1;
 }
 
 .center-wrapper {
@@ -93,32 +100,70 @@ body {
     }
 
         .list a .label {
-            font-size: 0.9rem;
+            font-size: clamp(8px, 1.2vw, 15px);
             color: white;
             transition: transform 0.2s ease, color 0.2s ease;
         }
 
 
         .list a svg {
-            color: white;
+            
             transition: transform 0.2s ease, color 0.2s ease;
             cursor: pointer;
             padding: 0.2rem;
         }
+    
 
-        .list a:hover svg {
-            color: darkblue;
-            transform: scale(1.2);
-        }
-
-        .list a:hover .label {
-            color: darkblue;
-            transform: scale(1.2);
-        }
-
-.card {
-    padding: 2em;
+.Github-icon{
+    color: white;
 }
+.Linkedin-icon{
+    color: white;
+}
+.Resume-icon{
+    color: white;
+}
+
+.Github-icon:hover {
+    color: #333;
+    transform: scale(1.2);
+}
+.Linkedin-icon:hover {
+    color: #0A66C2;
+    transform: scale(1.2);
+}
+.Resume-icon:hover {
+    color: #FF0000;
+    transform: scale(1.2);
+}
+
+        
+/*Projects Page elements*/
+.card {
+    width: clamp(1px, 16vw, 190px);
+    height: fit-content;
+    margin: 0 auto;
+    border: 4px ridge white;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 25px;
+    padding: 0 50px;
+    background: #1a1a1a;
+    color:white;
+}
+
+
+
+
+
+
+/*Projects Page elements*/
+
+
+
+
+
 
 .read-the-docs {
     color: #888;
@@ -173,7 +218,8 @@ body {
 
 
 .navbar {
-    width: fit-content;
+    width: clamp(1px, 16vw, 190px);
+    height: fit-content;
     margin: 0 auto;
     border: 4px ridge white;
     justify-content: center;
@@ -185,7 +231,7 @@ body {
 }
 
     .navbar a {
-        font-size: clamp(14px, 1.5vw, 22px);
+        font-size: clamp(18px, 1.5vw, 25px);
         color: white;
         text-decoration: none;
         font-weight: bold;

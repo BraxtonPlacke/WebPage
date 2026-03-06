@@ -16,13 +16,13 @@ function Home() {
 
                 <div className="list">
 
-                    <a href="https://github.com/BraxtonPlacke" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+                    <a href="https://github.com/BraxtonPlacke" target="_blank" rel="noreferrer" aria-label="GitHub profile" className="Github-icon">
                         <ImGithub />
                     </a>
-                    <a href="https://www.linkedin.com/in/braxton-placke-290917306" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+                    <a href="https://www.linkedin.com/in/braxton-placke-290917306" target="_blank" rel="noreferrer" aria-label="LinkedIn profile" className="Linkedin-icon">
                         <FaLinkedin />
                     </a>
-                    <a href="/2025 Resume.pdf" download>
+                    <a href="/2025 Resume.pdf" download className="Resume-icon">
                         <FaFileDownload />
                         <span className="label">Resume</span>
                     </a>
