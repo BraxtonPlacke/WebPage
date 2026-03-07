@@ -12,7 +12,7 @@ function Projects() {
                     <div className="card">
                         <div className="card-wrapper">
                             <img
-                                src={`public/FlagQuiz.png`}
+                                src={`/FlagQuiz.png`}
 
                             />
                             <p>A REST API built with ASP.NET Core that serves country and flag data to a React frontend,
