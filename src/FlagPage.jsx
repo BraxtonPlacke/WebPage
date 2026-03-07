@@ -43,7 +43,7 @@ function Flags() {
     }
 
     return (
-        <div className="center-wrapper">
+        <div className="center-wrapper" style={{ padding: "20px" }}>
             <div>
                 <h1>Guess the Flag</h1>
 

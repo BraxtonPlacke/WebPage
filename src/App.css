@@ -1,7 +1,7 @@
 
 @font-face {
-    font-family: "Algerian";
-    src: url("/Algerian Regular.ttf") format("truetype");
+    font-family: "00249";
+    src: url("/00249.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -19,12 +19,13 @@
 }
 
 h1 {
-    font-family: "Algerian";
-    font-size: clamp(30px, 2.5vw, 40px);
+    font-family: "00249";
+    font-size: clamp(25px, 2.4vw, 50px);
     font-weight: bold;
     text-align: center;
-    margin: 0;
-    color:white;
+    margin: 20px;
+    color: white;
+    white-space: nowrap;
 }
 
 button {
@@ -73,8 +74,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
-    gap: 1em;
+    padding: 200px;
+    
 }
 
 
@@ -140,20 +141,35 @@ main {
         
 /*Projects Page elements*/
 .card {
-    width: clamp(1px, 16vw, 190px);
+    width: clamp(10px, 90vw, 500px);
     height: fit-content;
-    margin: 0 auto;
     border: 4px ridge white;
     justify-content: center;
     text-align: center;
-    display: flex;
-    gap: 25px;
-    padding: 0 50px;
+   
+    
+    padding: 10px 10px;
     background: #1a1a1a;
     color:white;
 }
 
+.card img{
+    max-width: 250px;
+    height: 150px;
 
+}
+.card p{
+    font-size: clamp(5px, 2vw, 16px);
+
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
 
 
 
@@ -219,7 +235,7 @@ main {
 
 .navbar {
     width: clamp(1px, 16vw, 190px);
-    height: fit-content;
+    height: auto;
     margin: 0 auto;
     border: 4px ridge white;
     justify-content: center;
