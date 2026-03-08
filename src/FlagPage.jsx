@@ -5,20 +5,25 @@ function Flags() {
     const [selected, setSelected] = useState(null); // Track selected answer
     const [flagLoaded, setFlagLoaded] = useState(false);
 
-
-    useEffect(() => {
+    const fetchQuiz = () => {
         fetch("https://countryquizapi-hgaqbjd0gmekahd9.canadacentral-01.azurewebsites.net/api/flag/quiz")
-            .then(response => response.json())
+            .then(res => res.json())
             .then(data => {
                 setQuiz(data);
                 setSelected(null);
-
-
             })
             .catch(error => {
-                console.error("Error fetching quiz:", error);
+                console.error("Error fetching quiz, retrying...", error);
+                setTimeout(fetchQuiz, 3000); // retry after 3 seconds
             });
+    };
+
+    useEffect(() => {
+        fetchQuiz();
     }, []);
+
+
+  
 
     const handleGuess = (option) => {
         setSelected(option.id);
