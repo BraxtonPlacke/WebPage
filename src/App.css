@@ -8,7 +8,7 @@
 }
 
 #root {
-    max-width: 1280px;
+  
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
@@ -20,7 +20,7 @@
 
 h1 {
     font-family: "00249";
-    font-size: clamp(25px, 2.4vw, 50px);
+    font-size: clamp(25px, 5vw, 45px);
     font-weight: bold;
     text-align: center;
     margin: 20px;
@@ -63,7 +63,7 @@ main {
 
 .list {
     display: flex;
-    font-size: clamp(30px, 8vw, 64px);
+    font-size: clamp(30px, 10vw, 64px);
     gap: 0.25rem;
     border-radius: 8px;
     padding: 0.5rem;
