@@ -180,14 +180,14 @@ main {
 
     .flag-frame img {
         width: clamp(350px, 40vw, 800px);
-        height: clamp(350px, 27vw, 800px);
+        height: clamp(250px, 27vw, 800px);
     }
 
 button {
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 0.6em 1.2em;
-    font-size: clamp(8px, 2.2vw, 20px);
+    font-size: clamp(8px, 2.6vw, 20px);
     font-weight: 500;
     font-family: inherit;
     background-color: #1a1a1a;
