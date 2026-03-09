@@ -11,7 +11,7 @@ My personal webpage built with **React** and **Vite**, hosted on **Azure Static 
 
 ## Features
 - Links to my **GitHub**, **LinkedIn**, and **Resume** download
-- Interactive **flag guessing quiz** powered by a custom REST API
+- **Projects Page**
 - Responsive design
 
 ## Tech Stack
