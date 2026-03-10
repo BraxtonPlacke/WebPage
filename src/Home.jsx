@@ -22,7 +22,7 @@ function Home() {
                     <a href="https://www.linkedin.com/in/braxton-placke-290917306" target="_blank" rel="noreferrer" aria-label="LinkedIn profile" className="Linkedin-icon">
                         <FaLinkedin />
                     </a>
-                    <a href="/2025 Resume.pdf" download className="Resume-icon">
+                    <a href="/2026 Resume.pdf" download className="Resume-icon">
                         <FaFileDownload />
                         <span className="label">Resume</span>
                     </a>
