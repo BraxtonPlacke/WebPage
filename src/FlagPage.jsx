@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 
 function Flags() {
+    useEffect(() => {
+        document.title = "Flag Quiz";
+    }, []);
+
+
     const [quiz, setQuiz] = useState(null);
     const [selected, setSelected] = useState(null); // Track selected answer
     const [flagLoaded, setFlagLoaded] = useState(false);
@@ -22,7 +27,7 @@ function Flags() {
         fetchQuiz();
     }, []);
 
-
+    
   
 
     const handleGuess = (option) => {

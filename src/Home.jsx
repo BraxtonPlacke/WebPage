@@ -1,4 +1,4 @@
-
+import { useEffect } from "react";
 import './App.css';
 import { ImGithub } from "react-icons/im";
 import { FaLinkedin, FaFileDownload } from "react-icons/fa";
@@ -7,7 +7,9 @@ import { FaLinkedin, FaFileDownload } from "react-icons/fa";
 
 
 function Home() {
-
+    useEffect(() => {
+        document.title = "Braxton Placke"
+    },[]);
     return (
         <>
             <div className="center-wrapper">
